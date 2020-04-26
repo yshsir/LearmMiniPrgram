@@ -1,2 +1,16 @@
 <!--./pages/home/home.wxml-->
-<text>home.wxml</text>
+<!-- 数据绑定 -->
+<!-- <view>{{name}}</view>
+<view>{{age}}</view>
+<view>{{stu[0].name}}</view> -->
+<!-- <view wx:for="{{stu}}">{{item.age}}</view> -->
+<view>{{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button> 
+<button size="mini" bindtap="deleBtnClick">-</button> 
+<button size="mini"
+        open-type="getUserInfo"
+        bindgetuserinfo="handleGetUserInfo">
+  获取授权
+</button>
+<open-data type="userNickName"></open-data>
+<view wx:for="{{list}}" wx:key="list">{{item.title}}</view>
