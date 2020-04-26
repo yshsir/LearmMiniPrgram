@@ -1,0 +1,23 @@
+<!-- 1.image基本使用 -->
+<!-- 重点
+      1.image组件可以写成单标签
+      2.默认大小320*240
+      3.image组件是一个行内块标签（inline-block）
+ -->
+ <!-- 2.src：本地路径（相对/绝对路径）远程地址 -->
+ <image src="../../assets/img/1.jpg"></image>
+ <image src="/assets/img/1.jpg"></image>
+ <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+ <!-- 补充 -->
+<button bindtap="handelChooseAlbum">上传图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- 图片得懒加载lazy-load -->
+<image  wx:for="{{1}}"
+        src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+        bindload="handelImageLoad"
+        lazy-load="true"/>
+<!-- show-menu-by-longpress长按出现小程序码 -->
+<image  show-menu-by-longpress
+        src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>

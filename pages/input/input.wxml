@@ -1,0 +1,18 @@
+
+<!-- input的基本使用 -->
+<input/>
+<!-- value的属性 input中的默认值 -->
+<input value="haha"/>
+<!-- type决定键盘类型（文本/数字/身份证） -->
+<input type="number"></input>
+<!-- password:暗文 -->
+<input password/>
+<!-- placeholder占位 -->
+<input placeholder="10"></input>
+<!-- 键盘右下角文字 -->
+<input type="text" confirm-type="go"></input>
+
+<!-- input监听事件 -->
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur=" handleBlur"/>

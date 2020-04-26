@@ -1,0 +1,18 @@
+<view>哈哈</view>
+
+<view class="box1"
+      hover-class="hover-view"
+      hover-start-time="0">
+     box
+  </view>
+<!-- hover-class：当用户按下组件显示的样式 -->
+<!-- hover-stop-propagation阻止祖先组件的点击状态 -->
+<!-- hover-start-time按住多久出现点击状态 -->
+<view class="box2" hover-class="hover-view2">
+  <view class="box1"
+        hover-class="hover-view"
+        hover-start-time="0"
+        hover-stop-propagation>
+      box
+    </view>
+</view>

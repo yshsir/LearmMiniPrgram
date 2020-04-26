@@ -1,0 +1,19 @@
+<!--pages/text/text.wxml-->
+<!-- <text>pages/text/text.wxml</text> -->
+<!-- 1、基本使用 -->
+<text>asir \n</text>
+<text>asir \n</text>
+<!-- 2、selectable -->
+<!-- 默认情况下text中文本长按不能被选中 -->
+<text selectable >hanihao \n</text>
+
+<!-- 3、space空格大小 -->
+<!-- emsp一个中文的大小 -->
+<!-- ensp半个中文的大小 -->
+<text space="nbsp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+<text>hello world\n</text>
+<text space="ensp">hello world\n</text>
+
+<!-- 4、解码 -->
+<text decode>5 &gt; 3</text>
