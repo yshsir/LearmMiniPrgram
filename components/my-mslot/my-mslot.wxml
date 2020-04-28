@@ -1,0 +1,7 @@
+<view>
+<view>头部</view>
+<view class="slot1"><slot name="solt1"/></view>
+<view class="slot2"><slot name="solt2"/></view>
+<view class="slot3"><slot name="solt3"/></view>
+<view>底部</view>
+</view>

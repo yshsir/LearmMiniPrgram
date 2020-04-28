@@ -1,2 +1,32 @@
 <!--./pages/home/home.wxml-->
-<text>home.wxml</text>
+<!-- 基本使用 -->
+<!-- <my-cpn/>
+<cpn1/> -->
+<!-- 自定义组件的扩展 -->
+<!-- <view class="title">HOME</view>
+<my-style/> -->
+
+<my-prop title="六六" titleclass='red'/>
+<my-prop title="五五" titleclass='blue'/>
+<my-prop/>
+<view>{{counter}}</view>
+<my-event bind:increment="handIncrement"/>
+<w-tab-control titles="{{['a', 'b', 'c']}}"
+               bind:itemClick="handleTabClick"/>
+<my-sel class="sel-class"/>
+<button size="mini" bindtap="handIncrementCpn">+++</button>
+<view>-----------------</view>
+<my-slot>
+  <button size="mini">插入的按钮</button>
+</my-slot>
+<my-slot>
+  <slider></slider>
+</my-slot>
+<view>********************</view>
+<!-- 
+  注意事项：
+  1、给每个插槽起一个名字：name
+  2、必须Component对象中添加一个选项：options->multipleSlots: true -->
+<my-mslot>
+  <button size="mini" slot="solt2">+++</button>
+</my-mslot>
