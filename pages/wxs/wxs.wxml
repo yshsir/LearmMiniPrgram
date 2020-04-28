@@ -1,0 +1,3 @@
+<wxs src="../../wxs/format.wxs" module="format" />
+<view>{{price}}</view>
+<view>{{format.priceFormat(price, 2)}}</view>

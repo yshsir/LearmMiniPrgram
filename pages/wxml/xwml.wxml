@@ -1,0 +1,67 @@
+<view class='box {{isActive ? "active" : ""}}'>BOX</view>
+<button size="mini" bindtap="btnclick">切换颜色</button>
+<!-- <map class="map" longitude="116.11" latitude="39.6"></map> -->
+<view>----------条件判断----------</view>
+<view wx:if="{{isShow}}">haha</view>
+<button size="mini" bindtap="handleSwitchShow">掩藏/显示</button>
+
+<view wx:if="{{scroe >= 90}}">游戏</view>
+<view wx:elif="{{scroe >= 80}}">良好</view>
+<view wx:elif="{{scroe >= 60}}">及格</view>
+<view wx:else>不及格</view>
+<button size="mini" bindtap="addScroe">+6</button>
+
+<!-- hidden属性================ -->
+<!--区别  -->
+<view hidden="{{false}}">hidden属性控制内容</view>
+<view wx:if="{{true}}">wx:if控制显示内容</view>
+
+<!-- wx:for遍历数组字符串 -->
+<!-- <view wx:for="{{['a','b','c']}}">{{item}}{{index}}</view>
+<view wx:for="asir">{{item}}{{index}}</view>
+<view wx:for="{{10}}">{{item}}</view> -->
+
+<!-- block标签 不进行渲染 -->
+<!-- <block wx:if="{{isShow}}">
+  <view>520</view>
+  <view>520</view>
+  <view>520</view>
+</block>
+<block wx:for="{{3}}">
+  <button>按钮</button>
+  <button>按钮</button>
+  <button>按钮</button>
+</block> -->
+
+<!-- 3.item、index起名字 -->
+<!-- <view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i" wx:key="{{i}}">{{movie}}</view> -->
+
+<!-- <block wx:for="{{nums}}" wx:for-item="innum">
+  <block wx:for="{{innum}}">
+    {{item}}
+  </block>
+</block> -->
+<!-- key使用 -->
+<view wx:for="{{list}}" wx:key="index">{{item}}</view>
+
+<!-- template***********模板中包裹的内容在没有被使用时是不被渲染的 -->
+<!-- <template name="contentItem">
+  <button size="mini">{{btnText}}</button>
+  <view>{{content}}</view>
+</template> -->
+
+<!-- import外部导入模板
+    1.主要导入template
+    2.特点：不能进行递归导入
+ -->
+<import src="/wxml/template.wxml" />
+<!-- include是不能导入template模板
+     1.将公共的wxml中的组件抽取到一个文件中
+     2.特点：不能导入template/wxs，可以进行递归导入-->
+<include src="/wxml/template.wxml"/>
+
+
+<template is="contentItem" data="{{btnText: '警告', content: '哈哈'}}"></template>
+<template is="contentItem" data="{{btnText: '点击', content: '喜喜'}}"></template>
+
+

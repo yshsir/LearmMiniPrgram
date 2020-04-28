@@ -1,2 +1,12 @@
 <!--./pages/home/home.wxml-->
 <text>home.wxml</text>
+<include src="/wxml/header.wxml"/>
+<include src="/wxml/footer.wxml"/>
+<!-- 事件冒泡和事件捕获
+bind：一层层传递
+catch阻止事件的进一步传递 -->
+<view class="view1" capture-catch:tap="handleCaptureView1" bindtap='handleBindView1'>
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap='handleBindView2'>
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap='handleBindView3'></view>
+  </view>
+</view>

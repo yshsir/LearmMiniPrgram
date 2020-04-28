@@ -1,0 +1,6 @@
+<!--pages/wxss/wxss.wxml-->
+<text style='color: red; font-size: 32px'>pages/wxss/wxss.wxml</text>
+<view class="box1"></view>
+<view class="box2"></view>
+<view class="centent1">哈哈</view>
+<view class="centent2">呵呵</view>
