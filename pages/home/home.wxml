@@ -1,2 +1,4 @@
-<!--./pages/home/home.wxml-->
-<text>home.wxml</text>
+<button size="mini" bindtap="handShowModal">handShowModal</button>
+<button size="mini" bindtap="handShowLoading">handShowLoading</button>
+<button size="mini" bindtap="handShowActive">handShowActive</button>
+<button size="mini" open-type="share">分享</button>
