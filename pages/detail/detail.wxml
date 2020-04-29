@@ -1,0 +1,4 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<navigator open-type="navigateBack">----</navigator>
+<navigator url="/pages/comment/comment">评论</navigator>

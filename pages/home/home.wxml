@@ -1,2 +1,16 @@
-<!--./pages/home/home.wxml-->
-<text>home.wxml</text>
+<navigator url="/pages/detail/detail">详情页</navigator>
+
+<!-- 属性open-type -->
+<navigator url="/pages/detail/detail"
+           open-type="redirect">
+  详情页（redirect）
+</navigator>
+
+<navigator url="/pages/about/about"
+           open-type="switchTab">
+  about(switchTab）
+</navigator>
+<navigator url="/pages/detail/detail"
+           open-type="reLaunch">
+  detail(reLaunch）
+</navigator>
